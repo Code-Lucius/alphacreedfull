@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 576px) {
+    p.contact--header{
+        font-size: 1.8em;
+    }
+    p.contact--text{
+        font-size:2em;
+    }
+    h1.hero--header{
+      font-size:3em;
+    }
+
+    p.hero--text{
+      font-size: 1em;
+    }
+    p.hero--header2{
+      font-size: 1.2em;
+    }
+
+    div.hero--images{
+      height:60vh;
+    }
+    p.aboutHeader{
+      font-size:3em;
+    }
+
+    p.cont--header{
+      font-size:3em;
+     }
+    
+     p.cont--p{
+      font-size: 1em;
+     }
+  }
+
+body{
+  font-family: "Oswald", sans-serif; 
+}
+
+.offcanvas{
+  width:80% !important;
+}
+
+.montserrat-alphatextfont { 
+  font-family: "karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.2em;
+  font-style: normal;
+}
+
+.montserrat-alphaheader4 {
+    /* font-family: "Montserrat", sans-serif; */
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 2em;
+    font-style: normal;
+  }
+
+  .montserrat-alphaProjectText {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 1.2em;
+    font-style: normal;
+  }
+/* NAV STYLING STARTS HERE */
+.nav-link {
+    /* color: #18272F; */
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgb(236, 88, 0);
+    /* background-color: #87CEFA; */
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  .nav-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  
+.navbar{
+    position:sticky;
+    top:0;
+    z-index: 1;
+    background-color: white;
+    /* background-color: rgb(236, 88, 0); */
+    /* border-top: 10px solid #87CEFA; */
+    border-top: 10px solid rgb(236, 88, 0);
+    /* background-color: #87CEFA; */
+    /* border-bottom: 5px solid #87CEFA; */
+    /* background-color: #87CEFA;
+    background-color: rgb(236, 88, 0); */
+}
+
+.navbar li a{
+    color:black;
+}
+
+/* .navbar li a:hover{
+    color:;
+} */
+
+/* NAV STYLING ENDS HERE */
+/* HERO STYLING STARTS HERE */
+.hero--images{
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0, 0.2), rgba(10,10,30, 0.33)),url("../images/img5.jpg");
+  background-size: cover; 
+}
+.hero--header{
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 5em;
+  font-style: normal;
+  line-height: 0.4em;
+  color: rgb(17, 16, 16);
+}
+
+.hero--header2{
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 1.8em;
+  font-style: normal;
+  color: rgb(236, 88, 0);
+  line-height:2.5em;
+}
+.hero--text{
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-style: normal;
+  color: rgb(17, 16, 16);
+  letter-spacing: 3px;
+}
+
+/* HERO STYLING ENDS HERE */
+/* ABOUT STYLING STARTS HERE */
+.about--p{
+  font-family: "Karla", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.5em;
+    
+}
+
+.aboutHeader{
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 5em;
+    font-style: normal;
+    line-height: 1em;
+}
+
+.about--div{
+  background-color:#87CEFA;
+}
+.about--link{
+    text-decoration: none;
+    color: black;
+}
+
+.about--btn{
+    /* border: 2px solid #87CEFA; */
+    border: 2px solid rgb(236, 88, 0);
+}
+.about--btn:hover{
+    border: 2px solid white;
+    /* background: #87CEFA; */
+    background: rgb(236, 88, 0);
+    color:white;
+}
+/* ABOUT STYLING ENDS HERE */
+/* BLOG STYLING STARTS HERE */
+.blog--wrapper{
+    overflow-x: auto;
+}
+.blog--wrapper::-webkit-scrollbar{
+    width:0;
+}
+
+.blog--div{
+    height: 60vh;
+}
+
+.blog--divLast{
+    height: 40vh;
+    border: 2px solid grey;
+}
+.blog--img{
+    height: 100%;
+}
+
+.blog--btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid grey;
+    position: relative;
+    text-decoration: none;
+}
+  
+  .blog--btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    /* background-color: rgb(236, 88, 0); */
+    background-color: #87CEFA;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  .blog--btn:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  .blog--a{
+    color: white;
+    text-decoration: none;
+    /* font-size:1em; */
+}
+
+.blog--link { 
+  font-family: "karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+/* .blog--headline{
+  display: none
+}
+
+.blog--headline:hover{
+  display: inline-block;
+} */
+/* BLOG STYLING ENDS HERE */
+/* FOOTER STYLING STARTS HERE */
+.footer--header{
+  font-weight: 400;
+  font-size: 1.5em;
+  color: rgb(238, 237, 237);
+}
+
+.footer--a:hover{
+    color:rgb(236, 88, 0);
+}
+
+.footer--a, .footer--p{
+  text-decoration: none;
+  color: rgb(238, 237, 237);
+  font-size: 1em;
+  font-family: karla, sans-serif;
+}
+
+  .footer--socials{
+    font-size: 1em;
+    color: rgb(238, 237, 237);
+  }
+
+  .footer--socials:hover{
+    /* color:rgb(236, 88, 0) !important; */
+    color:rgb(236, 88, 0) !important;
+  }
+
+  /* .footer--text {
+    position: relative;
+    text-decoration: none;
+  }
+
+  .footer--text::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgb(236, 88, 0);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  .footer--text:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  } */
+
+/* FOOTER STYLING ENDS HERE */
+
+/* ABOUT PAGE STYLING STARTS HERE */
+  .about--image{
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+  }
+
+  .values--div{
+    height: 60vh;
+    background-color: rgb(236, 88, 0);
+  }
+
+  .current{
+    color: rgb(236, 88, 0) !important;
+  }
+
+  .values--text{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+    line-height: 1.8em;
+  }
+
+  /* .people--img{
+    height: 50vh;
+  } */
+
+  .img--about{
+    height: 50vh;
+    width: 100%;
+  }
+
+/* ABOUT PAGE STYLING ENDS HERE */
+/* CONTACT PAGE STYLING STARTS HERE */
+    .contact--image{
+        background-image: linear-gradient(to bottom, rgba(0,0,0, 0.7), rgba(10,10,30, 0.33)),url("../images/contact.png");
+        background-size: cover; 
+        min-height: 80vh;
+    }
+
+    .contact--header{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 3em;
+        color:#87CEFA;
+        font-style: normal;
+    }
+    .contact--text{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 3.2em;
+        color:white;
+        line-height: 1.2em;
+        font-style: normal;
+    }
+
+    .contact--form {
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem !important;
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        line-height: 1.5;
+        /* color: #212529; */
+        background-color: #fff;
+        background-clip: padding-box;
+        border: none;
+        border-bottom: 3px solid #212529;
+        /* border-bottom: 3px solid rgb(236, 88, 0); */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        /* border-radius: 0.375rem; */
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      input[type="text"], input[type="password"], input[type="email"], textarea {
+        border: none;
+        outline: none;
+        resize:none;
+        border-bottom: 3px solid #212529;
+        /* border-bottom: 3px solid rgb(236, 88, 0); */
+      }
+
+      .contact--address{
+        line-height:0.8em;
+      }
+      .contact--address--header {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 1.5em;
+        font-style: normal;
+      }
+
+      .contact--map{
+        width: 100%;
+      }
+
+
+/* CONTACT PAGE STYLING ENDS HERE */
+/* BLOG PAGE STYLING STARTS HERE */
+   /* .blog--latest--image{
+    width: 100%;
+    height: 100vh;
+   } */
+
+   .blog--header{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1em;
+    font-style: normal; 
+    color: rgb(236, 88, 0);
+   }
+   .blog--text{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal; 
+   }
+
+   .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: rgb(236, 88, 0);
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+   
+
+/* BLOG PAGE STYLING ENDS HERE */
+
+.move--image{
+  height: 60vh;
+}
+
+.scrolll{
+  height: 100vh;
+}
+
+.image--div{
+  height: 100vh;
+  /* background-color: #87CEFA; */
+}
+
+.bg-blue{
+  background-color: #87CEFA;
+}
+
+.bg-orange{
+  background-color: rgb(236, 88, 0);
+}
+
+.text-orange{
+  color: rgb(236, 88, 0);
+}
+
+.text-blue{
+  color: #87CEFA;
+}
+
+.cont--div{
+  height: 80vh;
+  background-image: linear-gradient(to bottom, rgba(236,88,0,0.7), rgba(236,88,0,0.7)),url("../images/img5.jpg");
+  background-size: cover; 
+}
+
+.cont--p{
+  font-optical-sizing: auto;
+  font-family: "karla", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  font-style: normal; 
+  color: white;
+ }
+
+ .cont--header{
+  font-optical-sizing: auto;
+  font-family: "oswald", sans-serif;
+  font-weight: 600;
+  font-size: 5em;
+  font-style: normal; 
+  color: white;
+  line-height: 1em;
+ }
+
+ .cont--contact{
+  border: 10px solid rgb(223, 220, 220);
+ }
+
+ .btn-white{
+  background-color: white;
+ }
+
+ .btn-white:hover{
+    border: 2px solid white !important;
+    background-color: rgb(236, 88, 0) !important;
+    color:white;
+ }
